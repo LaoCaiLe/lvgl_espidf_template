@@ -1,0 +1,31 @@
+{
+    "idf.flashType": "UART",
+    "idf.portWin": "COM8",
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "chrono": "c",
+        "xlocale": "c",
+        "functional": "c",
+        "lvgl.h": "c",
+        "lv_demos.h": "c",
+        "lcd.h": "c",
+        "lv_gui_app.h": "c",
+        "esp_spi_flash.h": "c",
+        "stdbool.h": "c",
+        "lv_port_disp.h": "c",
+        "algorithm": "c",
+        "xstring": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "nvs_flash.h": "c",
+        "lv_example_anim.h": "c",
+        "lcd_init.h": "c",
+        "spi_master.h": "c",
+        "esp_log.h": "c",
+        "gpio.h": "c",
+        "task.h": "c",
+        "lv_examples.h": "c",
+        "esp_timer.h": "c",
+        "stdarg.h": "c"
+    }
+}
