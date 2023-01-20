@@ -2,7 +2,7 @@
 
 IDE: vscode(Espressif IDF)
 
-version : Lvgl8.3.5-dev
+version : Lvgl8.3.4
 
 TFT: 1.54inch / ST7789
 
