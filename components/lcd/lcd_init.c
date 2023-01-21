@@ -240,8 +240,9 @@ void LCD_Init(void)
 	DELAY(10);
 	LCD_WR_REG(0x11);
 	DELAY(12);
+
 	LCD_WR_REG(ST7789_SLPOUT);   // Sleep out
-	vTaskDelay(120);
+	DELAY(120);
 
 	LCD_WR_REG(ST7789_NORON);    // Normal display mode on
 
@@ -260,7 +261,6 @@ void LCD_Init(void)
 
 	LCD_WR_REG(ST7789_COLMOD);
 	LCD_WR_DATA8(0x55);
-	vTaskDelay(10);
 
 	//--------------------------------ST7789V Frame rate setting----------------------------------//
 	LCD_WR_REG(ST7789_PORCTRL);
@@ -344,89 +344,8 @@ void LCD_Init(void)
 	LCD_WR_DATA8(0x01);
 	LCD_WR_DATA8(0xE5);    // 319
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	vTaskDelay(12);
-
 	LCD_WR_REG(ST7789_DISPON);    //Display on
-	vTaskDelay(12);
-	// LCD_WR_REG(0x11); 
-	// DELAY(120);
-
-	// LCD_WR_REG(0x36);
-	// LCD_WR_DATA8(0x08);
-	// LCD_WR_REG(0x3A); 
-	// LCD_WR_DATA8(0x05);
-
-	// LCD_WR_REG(0xB2);
-	// LCD_WR_DATA8(0x0C);
-	// LCD_WR_DATA8(0x0C);
-	// LCD_WR_DATA8(0x00);
-	// LCD_WR_DATA8(0x33);
-	// LCD_WR_DATA8(0x33); 
-
-	// LCD_WR_REG(0xB7); 
-	// LCD_WR_DATA8(0x35);  
-
-	// LCD_WR_REG(0xBB);
-	// LCD_WR_DATA8(0x19);
-
-	// LCD_WR_REG(0xC0);
-	// LCD_WR_DATA8(0x2C);
-
-	// LCD_WR_REG(0xC2);
-	// LCD_WR_DATA8(0x01);
-
-	// LCD_WR_REG(0xC3);
-	// LCD_WR_DATA8(0x12);   
-
-	// LCD_WR_REG(0xC4);
-	// LCD_WR_DATA8(0x20);  
-
-	// LCD_WR_REG(0xC6); 
-	// LCD_WR_DATA8(0x0F);    
-
-	// LCD_WR_REG(0xD0); 
-	// LCD_WR_DATA8(0xA4);
-	// LCD_WR_DATA8(0xA1);
-
-	// LCD_WR_REG(0xE0);
-	// LCD_WR_DATA8(0xD0);
-	// LCD_WR_DATA8(0x04);
-	// LCD_WR_DATA8(0x0D);
-	// LCD_WR_DATA8(0x11);
-	// LCD_WR_DATA8(0x13);
-	// LCD_WR_DATA8(0x2B);
-	// LCD_WR_DATA8(0x3F);
-	// LCD_WR_DATA8(0x54);
-	// LCD_WR_DATA8(0x4C);
-	// LCD_WR_DATA8(0x18);
-	// LCD_WR_DATA8(0x0D);
-	// LCD_WR_DATA8(0x0B);
-	// LCD_WR_DATA8(0x1F);
-	// LCD_WR_DATA8(0x23);
-
-	// LCD_WR_REG(0xE1);
-	// LCD_WR_DATA8(0xD0);
-	// LCD_WR_DATA8(0x04);
-	// LCD_WR_DATA8(0x0C);
-	// LCD_WR_DATA8(0x11);
-	// LCD_WR_DATA8(0x13);
-	// LCD_WR_DATA8(0x2C);
-	// LCD_WR_DATA8(0x3F);
-	// LCD_WR_DATA8(0x44);
-	// LCD_WR_DATA8(0x51);
-	// LCD_WR_DATA8(0x2F);
-	// LCD_WR_DATA8(0x1F);
-	// LCD_WR_DATA8(0x1F);
-	// LCD_WR_DATA8(0x20);
-	// LCD_WR_DATA8(0x23);
-
-	// LCD_WR_REG(0x21); 
-
-	// LCD_WR_REG(0x11);
-
-	// LCD_WR_REG(0x29);
+	
 } 
 
 

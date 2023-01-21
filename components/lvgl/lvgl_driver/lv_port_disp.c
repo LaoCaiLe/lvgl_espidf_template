@@ -87,7 +87,7 @@ void lv_port_disp_init(void)
     static lv_disp_draw_buf_t draw_buf_dsc;
     lv_color_t * buf_1 = heap_caps_malloc(MY_DISP_HOR_RES*LV_H_NUM*sizeof(lv_color_t),MALLOC_CAP_DMA);
     lv_color_t * buf_2 = heap_caps_malloc(MY_DISP_HOR_RES*LV_H_NUM*sizeof(lv_color_t),MALLOC_CAP_DMA);
-    lv_disp_draw_buf_init(&draw_buf_dsc, buf_1, buf_2, MY_DISP_HOR_RES * 10);   /*Initialize the display buffer*/
+    lv_disp_draw_buf_init(&draw_buf_dsc, buf_1, buf_2, MY_DISP_HOR_RES * 120);   /*Initialize the display buffer*/
 
     // /* Example for 3) also set disp_drv.full_refresh = 1 below*/
     // static lv_disp_draw_buf_t draw_buf_dsc_3;
