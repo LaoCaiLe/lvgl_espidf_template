@@ -2,7 +2,7 @@
 #include <string.h>
 
 
-#define LCD_HOST   VSPI_HOST
+#define LCD_HOST   HSPI_HOST
 spi_device_handle_t spi;
 
 extern void spi_disp_flush_ready(void);

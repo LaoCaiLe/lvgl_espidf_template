@@ -18,12 +18,12 @@
 #define LCD_W 240
 #define LCD_H 240
 
-#define LCD_BLK_PIN     19
-#define LCD_RES_PIN     22
-#define LCD_DC_PIN      4
-#define LCD_MOSI_PIN    23
-#define LCD_SCLK_PIN    18
-#define LCD_CS_PIN      5
+#define LCD_BLK_PIN     26
+#define LCD_RES_PIN     27
+#define LCD_DC_PIN      25
+#define LCD_MOSI_PIN    13
+#define LCD_SCLK_PIN    14
+#define LCD_CS_PIN      15
 
 //-----------------LCD�˿ڶ���---------------- 
 #define TFT_NOP     0x00
