@@ -12,7 +12,7 @@
 
 #define DELAY(X) vTaskDelay(((X)/ portTICK_PERIOD_MS))
 
-#define USE_HORIZONTAL 0  //���ú�������������ʾ 0��1Ϊ���� 2��3Ϊ����
+#define USE_HORIZONTAL 0
 
 
 #define LCD_W 240
@@ -25,7 +25,7 @@
 #define LCD_SCLK_PIN    14
 #define LCD_CS_PIN      15
 
-//-----------------LCD�˿ڶ���---------------- 
+
 #define TFT_NOP     0x00
 #define TFT_SWRST   0x01
 
@@ -54,7 +54,7 @@
 #define TFT_MAD_MH  0x04
 #define TFT_MAD_SS  0x02
 #define TFT_MAD_GS  0x01
-#define ST7789_NOP			0x00
+#define ST7789_NOP          0x00
 #define ST7789_SWRESET		0x01
 #define ST7789_RDDID		0x04
 #define ST7789_RDDST		0x09
@@ -85,7 +85,7 @@
 #define ST7789_PTLAR		0x30
 #define ST7789_VSCRDEF		0x33      // Vertical scrolling definition (ST7789V)
 #define ST7789_TEOFF		0x34      // Tearing effect line off
-#define ST7789_TEON			0x35      // Tearing effect line on
+#define ST7789_TEON     	0x35      // Tearing effect line on
 #define ST7789_MADCTL		0x36      // Memory data access control
 #define ST7789_VSCRSADD		0x37      // Vertical screoll address
 #define ST7789_IDMOFF		0x38      // Idle mode off
@@ -155,13 +155,13 @@ LEDA GND RES RS SDA SCL VCC CS
 */
 IRAM_ATTR void VSPI_data_queue(uint16_t *dat, uint32_t len, uint32_t user_fg);
 void lcd_spi_init();
-void LCD_GPIO_Init(void);//��ʼ��GPIO
-void LCD_Writ_Bus(u8 dat);//ģ��SPIʱ��
-void LCD_WR_DATA8(u8 dat);//д��һ���ֽ�
-void LCD_WR_DATA(u16 dat);//д�������ֽ�
-void LCD_WR_REG(u8 dat);//д��һ��ָ��
-void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//�������꺯��
-void LCD_Init(void);//LCD��ʼ��
+void LCD_GPIO_Init(void);//???????GPIO
+void LCD_Writ_Bus(u8 dat);//????SPI????
+void LCD_WR_DATA8(u8 dat);//????????????
+void LCD_WR_DATA(u16 dat);//??????????????
+void LCD_WR_REG(u8 dat);//????????????
+void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//???????????????
+void LCD_Init(void);//LCD???????
 #endif
 
 

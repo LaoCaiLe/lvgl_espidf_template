@@ -43,18 +43,14 @@ esp_err_t _lv_timer_create(void)
 
 void app_main(void)
 {
-
     /* Configure the peripheral according to the LED type */
-    // configure_led();
     LCD_Init();
     _lv_timer_create();
     lv_init();
     lv_port_disp_init();
-    // lv_example_anim_3();
     lv_demo_music();
     while(1)
     {
-        // lv_tick_inc(1);
         lv_task_handler();
         // vTaskDelay(5);
     }
